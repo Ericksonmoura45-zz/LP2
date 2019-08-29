@@ -8,25 +8,25 @@ import java.util.Scanner;
 
 public class Recepcionista extends Funcionario
 {
-	private String[] idiomasDominados = new String[5];
+	private String[] idiomasFalados = new String[5];
 	private int cont = 0;
 
 	public Recepcionista(String matricula, String nome, double saldo, String idioma) 
 	{
 		super(matricula, nome, saldo);
-		setIdiomasDominados(idioma);
+		setIdiomasFalados(idioma);
 		
 	}
-	void setIdiomasDominados(String idioma) { // 
+	void setIdiomasFalados(String idioma) { //
 		if(cont==5) {
-			System.out.println("Quantidade de idiomas atiginda");
+			System.out.println("Quantos idiomas fala: ");
 			return;
 		}
-		idiomasDominados[cont] = idioma;
+		idiomasFalados[cont] = idioma;
 		cont++;
 	}
 	
-	/**public Hospede CadastrarHospede() { // Cadastra um novo hospede(ainda não funcionando!)
+	public Hospede CadastrarHospede() { // Cadastra um novo hospede(teste)
 		Random r = new Random();
 		Scanner sc = new Scanner(System.in);
 		
@@ -48,7 +48,7 @@ public class Recepcionista extends Funcionario
 		System.out.println("Tel: "+h.getTel());
 		return h;
 	}
-	**/
+
 	public Hospedagem realizarReserva(Aposento ap) 
 	{ //Reserva Hospedagem
 		Hospede h = CadastrarHospede();

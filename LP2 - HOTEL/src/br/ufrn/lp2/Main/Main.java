@@ -1,6 +1,6 @@
 ackage br.ufrn.lp2.Main;
 
-import br.ufrn.lp.Classes.*;
+import br.ufrn.lp.Classes.*; // O '*' serve para importar todas as classes do diretório
 
 import java.text.ParseException;
 import java.util.*;
@@ -8,11 +8,10 @@ import java.util.*;
 public class Main {
 
 	public static void main(String[] args) throws ParseException {
-		Recepcionista r = new Recepcionista("365.968.987-65", "Dimas", 100, "Ingles");
+		Recepcionista r = new Recepcionista("365.968.987-65", "Dimas", 100, "Ingles");    /*Preenchendo as classes com dados */
 		Camareira c = new Camareira("693.965.874-96", "Maria", 350);
 		Aposento ap = new Aposento(8, 300, "Suite", 6);
 
-			
 		Consumo consumo1 = new Consumo(12, "luz", 1, 3.0);
 		Conta conta1 = new Conta();
 		Aposento aposento1 = new Aposento(13, 356, "Singular", 10);

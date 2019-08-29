@@ -5,20 +5,20 @@ import java.util.Date;
 public class Hospedagem 
 {
 	private int codigo;
-	private String dEntrada;
-	private String dSaida;
+	private String dataEntrada;
+	private String dataSaida;
 	private Hospede hospede;
 	private Aposento aposento;
 	private Conta conta;
 
 	public String getDataEntrada() 
 	{
-		return dEntrada;
+		return dataEntrada;
 	}
 
 	public String getDataSaida() 
 	{
-		return dSaida;
+		return dataSaida;
 	}
 
 	public Aposento getAposento() 
@@ -37,11 +37,11 @@ public class Hospedagem
 	}	
 
 
-	public Hospedagem(String dEntrada, String dSaida, Hospede hospede, Aposento aposento, Conta conta) 
+	public Hospedagem(String dataEntrada, String dataSaida, Hospede hospede, Aposento aposento, Conta conta)  /* Construtor de Hospedagem (child)*/
 	{
-		super();
-		this.dEntrada = dEntrada;
-		this.dSaida = dSaida;
+		//super();
+		this.dataEntrada = dEntrada;
+		this.dataSaida = dSaida;
 		this.hospede = hospede;
 		this.aposento = aposento;
 		this.conta = conta;

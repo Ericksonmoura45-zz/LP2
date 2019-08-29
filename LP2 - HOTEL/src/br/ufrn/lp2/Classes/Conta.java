@@ -10,7 +10,7 @@ public class Conta
 	private Consumo[] consumos;
 	private int cont;
 	
-	public boolean isPago() 
+	public boolean EstaPago()
 	{
 		return pago;
 	}
@@ -31,15 +31,15 @@ public class Conta
 	
 	public void setConsumo(Consumo consumo) 
 	{
-		consumos[cont] = consumo;
-		this.valor += consumo.getValorUnitario() * consumo.getQuantidade();
+		consumos[cont] = consumo; /**/
+		this.valor += consumo.getValorUnitario() * consumo.getQuantidade(); /* Faz a soma dos valores dos itens consumidos*/
 		cont++;
 	}
 
 	public Conta() // Testar antes
 	{
 		Random r = new Random();
-		this.codigo = r.nextInt(50)+1;
+		this.codigo = r.nextInt(50)+1;                    /* Gera valores aleatórios para o código do produto*/
 		this.pago = false;
 		this.valor = 0.0;
 		this.consumos = new Consumo[5];

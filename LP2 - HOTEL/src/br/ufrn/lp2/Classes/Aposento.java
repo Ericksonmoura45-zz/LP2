@@ -11,7 +11,7 @@ public class Aposento {
 		return numero;
 	}
 
-	public Aposento(int codigo, double valor, String descricao, int numero) 
+	public Aposento(int codigo, double valor, String descricao, int numero) /* Construtor da classe Aposento*/
 	{
 		this.codigo = codigo;
 		this.valor = valor;

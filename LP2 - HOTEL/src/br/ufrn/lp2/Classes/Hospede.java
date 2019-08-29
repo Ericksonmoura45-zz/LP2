@@ -28,7 +28,7 @@ public class Hospede
 		return tel;
 	}
 
-	public Hospede(int codigo, String nome, String cpf, String rg, String tel) 
+	public Hospede(int codigo, String nome, String cpf, String rg, String tel) /*Construtor de Hospede(child) */
 	{
 		super();
 		this.codigo = codigo;

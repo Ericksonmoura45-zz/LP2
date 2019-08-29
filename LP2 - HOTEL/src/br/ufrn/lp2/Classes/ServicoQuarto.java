@@ -9,12 +9,14 @@ public class ServicoQuarto
 	private Camareira camareira;
 	private boolean realizado;
 	
-	public Hospedagem getHospedagem() 
+	public Hospedagem getHospedagem()
+
 	{
 		return hospedagem;
 	}
 
-	public Camareira getCamareira() 
+	public Camareira getCamareira()
+
 	{
 		return camareira;
 	}
