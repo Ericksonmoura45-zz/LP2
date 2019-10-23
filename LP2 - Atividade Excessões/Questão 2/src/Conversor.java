@@ -1,15 +1,20 @@
 public class Conversor {
 
-    private double temp = 50;
-    public double converter (double temp) throws FahException{
-        double celsius = (temp - 32) * (5/9));
-        if(temp < 459,67){
-            throw new FahException("Zero absoluto");
-        }
-        else if(celsius < 273,15){
-            throw new FahException("Zero absoluto");
-        }
+    public double fahrenheit;
+    public double celsius;
 
-        return celsius;
+    public double converter() throws FahException{
+        try {
+            if(fahrenheit<-459.67){
+                throw new FahException("Valor menor que o zero absoluto: -459.67Fº");
+            }
+            else{
+                return (5*(fahrenheit-32))/9;
+            }
+
+        }catch(FahException e){
+            e.printStackTrace();
+        }
+        return 0;
     }
 }

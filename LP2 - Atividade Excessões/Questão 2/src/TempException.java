@@ -1,9 +1,7 @@
-public class TempException {
-    public void TempException() throws Exception {
-        throw new Exception("Excessão1");
-    public void FahException() throws TempException{
-        throw new Exception("Excessão2");
-        }
-    }
+public class TempException extends Exception{
 
+    public TempException(String msg){
+        super(msg);
+        printStackTrace();
+    }
 }
