@@ -1,14 +1,23 @@
 public class Conta {
-
-    int numConta;
-    String NomeCliente;
+    public static int contas = 0;
     double Saldo;
 
-    public void Saque (double quantidade){
+    public Conta() {
+        Cliente cliente = new Cliente();
+        cliente.cpf = 1234568987;
+        cliente.nome = "Arnold";
+        cliente.numConta = 126548;
+        cliente.ID = 19;
+        contas = contas + 1;
+    }
+
+
+    public void Saque(double quantidade) {
         this.Saldo -= quantidade;
     }
-    boolean Saca (double quantidade){
-        if(this.Saldo < quantidade){
+
+    boolean Saca(double quantidade) {
+        if (this.Saldo < quantidade) {
             return false;
         } else {
             this.Saldo -= quantidade;
@@ -16,20 +25,19 @@ public class Conta {
 
         }
     }
-    public void Deposita (double quantidade){
+
+    public void Deposita(double quantidade) {
         this.Saldo += quantidade;
 
     }
-    public  void ImpTitular (int conta){
-        if(conta == this.numConta){
-            System.out.println(this.NomeCliente);
-        }
-    }
+}
+/*
     public double transferir (int conta, double valor){
-        if(conta == this.numConta){
+        if(conta == ??????){
             return this.Saldo += valor;
         } else
         return valor;
     }
 
 }
+*/
