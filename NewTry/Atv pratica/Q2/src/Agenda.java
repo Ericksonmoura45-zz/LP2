@@ -21,9 +21,16 @@ public class Agenda {
         }
     }
     void imprimeAgenda(){
+        do {
+            System.out.println("Nome: " + nome + "\n");
+            System.out.println("Idade: " + idade + "\n");
+            System.out.println("Altura: " + altura + "\n");
+            System.out.println("Posição: " + index + "\n" + "\n");
+            index = index + 1;
+        } while(index <= 10);
 
     }
     void imprimePessoa(int index){
-
+// Não deu tempo :'(
     }
 }
